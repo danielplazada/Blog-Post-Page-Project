@@ -1,5 +1,5 @@
 .container {
-    
+    display: flex;
     font-size: 30px;
     color: #fff;
     display: grid;
@@ -7,6 +7,7 @@
     grid-template-rows: 250px 600px 400px 1fr;
     grid-template-areas: "hd""sd""main""ft";
 }
+
 .main_page_container {
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@ body {
 
 .post_picture {
     border: 5px solid blue;
-    background-image: url('ocean.jpg');
+    background-image: url('images/ocean.jpg');
     background-size: cover;
 }
 
