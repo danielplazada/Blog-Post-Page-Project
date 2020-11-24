@@ -37,8 +37,7 @@ body {
 
 .post_picture {
     border: 5px solid blue;
-    background-image: url('images/ocean.jpg');
-    background-size: cover;
+    object-fit: cover
 }
 
 .post_content {
@@ -103,7 +102,8 @@ body {
 
 #box_three {
     contain: content;
-    grid-area: main;
+    background-image:url("rabbits.jpg");
+    grid-area:main;
 }
 
 #box_four {
@@ -195,7 +195,7 @@ button {
         grid-template-rows: 350px 600px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "sd sd sd main main main main main"
+        "sd sd sd sd sd main main main"
         "ft ft ft ft ft ft ft ft";
     }
     }
@@ -206,7 +206,7 @@ button {
         grid-template-rows: 350px 400px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main main"
+        "sd sd sd sd main main main main"
         "ft ft ft ft ft ft ft ft";
     }
     }
@@ -316,3 +316,4 @@ ul{
     border-radius: 50%;
    
   }
+  
