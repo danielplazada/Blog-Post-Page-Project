@@ -4,7 +4,7 @@
     color: #fff;
     display: grid;
     grid-template-columns: 93vw;
-    grid-template-rows: 250px 600px 400px 1fr;
+    grid-template-rows: 350px 600px 400px 1fr;
     grid-template-areas: "hd""sd""main""ft";
 }
 
@@ -15,7 +15,7 @@
     color: #fff;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: 50vw, 50vw;
+    grid-template-columns: 60vw, 60vw;
     grid-template-rows:200px;
     grid-template-areas: 
     "h"
@@ -42,10 +42,12 @@ body {
 }
 
 .post_content {
+    font-size:20px;
     border: 5px solid green;
 }
 
 .footer {
+    contain: content;
     border: 5px solid orangered;
 }
 .main_header{
@@ -60,6 +62,7 @@ body {
     
 }
 .main_footer {
+    contain: content;
     border: 5px solid rgb(173, 40, 185);
 }
 #head{
@@ -89,58 +92,75 @@ body {
     border: 5px solid orangered;
 }
 #box_one {
+    contain: content;
     grid-area: hd;
 }
 
 #box_two {
+    contain: content;
     grid-area: sd;
 }
 
 #box_three {
+    contain: content;
     grid-area: main;
 }
 
 #box_four {
+    contain: content;
     grid-area: ft;
 }
 
 
 h1 {
-    padding: 10px 0;
+    padding: 3px 0;
     text-align: center;
     contain: content;
     font-size:50px;
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     margin: 0px;
-    padding: 15px;
+    
 }
 
 h3 {
-    text-align: center;
+    text-align:left;
     contain: content;
     font-size: 20px;
     margin: 0px;
-    padding: 15px;
+    padding: 3px;
 }
 
 h4 {
-    text-align: center;
+    text-align: left;
     contain: content;
     font-size: 20px;
     margin: 0px;
-    padding: 15px;
+    padding: 0px;
 }
 h5 {
     
+    contain: center;
     contain: content;
-    font-size: 36px;
+    font-size: 20px;
     margin: 0px;
-    padding: 25px;
+    padding: 0px;
 }
+h6 {
+    contain: center;
+    contain:content;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color: yellow;
+    font-size: 20px;
+}
+
 
 button {
     background-color: #3639e2;
@@ -151,46 +171,28 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
+    
 }
 .readMoreButton {
     background-color: Transparent;
     border: none;
-    color: rgb(163, 0, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin: 10px;
+    
 }
 .subscribe {
-   background-color:rgb(229, 0, 0);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 29px;
-    font-weight: bold;
-    text-decoration: underline;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
-
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:992px) {
     .container {
         display:grid;
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 600px;
+        grid-template-rows: 350px 600px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "sd sd sd main main main main main"
@@ -198,6 +200,17 @@ button {
     }
     }
 @media only screen and (min-width:600px) {
+    .container {
+        display:grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 350px 400px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+    }
+@media only screen and (min-width:900px) {
     .main_page_container {
         font-size: 30px;
         color: #fff;
@@ -212,3 +225,94 @@ button {
         "f f";
         }
     }
+    @media only screen and (min-width:600px) {
+        .main_page_container {
+            font-size: 30px;
+            color: #fff;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 50vw, 50vw;
+            grid-template-rows:200px;
+            grid-template-areas: 
+            "h h"
+            "b1 b2"
+            "b3 b4"
+            "f f";
+            }
+        }
+figure {
+        padding: 4px;
+        margin: auto;
+}
+figcaption {
+        background-color: Transparent;
+        color: white;
+        font-style: italic;
+
+        padding: 2px;
+        text-align: center;
+}
+.rabbit_pic{
+    width: 360px;
+}
+footer {
+    align: center;
+    text-align: center;
+    background-color:transparent;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+ul{    
+    width: 150px;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-right: 0px;
+    font-size: 30px;
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-linkedin {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+   
+  }
